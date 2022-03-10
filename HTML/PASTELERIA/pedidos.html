@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+</head>
+<body style="background-color: rgba(182, 124, 236, 0.452);">
+    <h1 style="color: rgba(64, 47, 223, 0.774);">Pedidos Pasteleria Dulce sabor</h1>
+    <h1>Ordena tu pedido</h1>
+    <img src="./logo pasteleria.png" alt="logo Pasteleria" width="200px">
+
+    <h2>Datos Personales</h2>
+    <form action="pedido.js">
+        <label for="Nombre">Nombre completo</label><br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+
+        <br><br>
+        <label for="Teléfono">Teléfono</label><br>
+        <input type="text" id="Teléfono" name="Teléfono" placeholder="N°. Tel">
+
+        <br><br>
+        <label for="Correo Electrónico">Correo Electrónico</label><br>
+        <input type="text" id="Correo Electrónico" name="Correo Electrónico" placeholder="Example@gmail.com">
+
+        <p>Tipo de Pastel </p>
+        <input type="radio" id="Redondo" name="Tipo de pastel" value="Redondo">
+        <label for="Redondo">Redondo</label><br>
+        <input type="radio" id="Rectangular" name="Tipo de pastel" value="Rectangular">
+        <label for="Rectangular">Rectangular</label><br>
+
+        <p>Medida del pastel</p>
+        <li>Redondos</li>
+        <select name="Redondo" id="Redondo">
+            <option value="None"></option>
+            <option value="Chico">Chico 15cm (4 - 6 Porciones)</option>
+            <option value="Mediano">Mediano 20cm (8 - 10 Porciones)</option>
+            <option value="Grande">Grande 25cm (20 - 24 Porciones)</option>
+            
+        </select>
+
+        <li>Rectangulares</li>
+        <select name="Redondo" id="Redondo">
+            <option value="None"></option>
+            <option value="Chico">Chico 18 x 28cm (12 - 15 Porciones)</option>
+            <option value="Mediano">Mediano 23 x 33cm (20 - 24 Porciones)</option>
+            <option value="Grande">Grande 28 x 38cm (35 - 40 Porciones)</option>
+            <option value="Jumbo">Chico 15cm (4 - 6 Porciones)</option>
+        </select>
+
+        <p>Medida de pastel pisos</p>
+        <li>Redondos</li>
+        <select name="Redondo" id="Redondo">
+            <option value="None"></option>
+            <option value="Piso M">Piso M (Base de pastel mediano con chico)</option>
+            <option value="Piso G">Piso G (Base de pastel grande con mediano</option>
+            
+        </select>
+
+        <li>Rectangulares</li>
+        <select name="Redondo" id="Redondo">
+            <option value="None"></option>
+            <option value="Piso S">Piso S (Base de pastel mediano con chico)</option>
+            <option value="Piso L">Piso L (Base de pastel grande con mediano)</option>
+            <option value="Piso XL">Piso XL (Base del pasel Jumbo con piso mediano)</option>
+
+        </select>
+
+        <p>Tipo de Sabor</p>
+        <input type="checkbox" id="Fresa" name="Fresa" value="Fresa">
+        <label for="Fresa">Fresa</label>
+        <input type="number" id="fresaCuantos" name="FresaCuantos" placeholder="¿Cuantos?">
+        <input type="checkbox" id="Vainilla" name="Vainilla" value="Vainilla">
+        <label for="Vainilla">Vainilla</label>
+        <input type="number" id="VainillaCuantos" name="VainillaCuantos" placeholder="¿Cuantos?">
+        <br>
+        <input type="checkbox" id="Chocolate" name="Chocolate" value="Chocolate">
+        <label for="Chocolate">Chocolate</label>
+        <input type="number" id="ChocolateCuantos" name="ChocolateCuantos" placeholder="¿Cuantos?">
+        <input type="checkbox" id="Nuez" name="Nuez" value="Nuez">
+        <label for="Nuez">Nuez</label>
+        <input type="number" id="NuezCuantos" name="NuezCuantos" placeholder="¿Cuantos?">
+        <br>
+        <input type="checkbox" id="Combinado" name="Combinado" value="Combinado">
+        <label for="Combinado">Combinado</label>
+        <input type="number" id="CombinadoCuantos" name="CombinadoCuantos" placeholder="¿Cuantos?">
+        
+        <br><br>
+        <label for="Nombre">Tipo de decoracion</label><br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Favor de especificar">
+
+        <br><br>
+        <input type="reset">
+        <input type="submit">
+        <br><br>
+        </form>
+</body>
+</html>
